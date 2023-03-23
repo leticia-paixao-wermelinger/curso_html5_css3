@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou, simplesmente, aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/img_p.jpg" type="image/jpg">        <source media="(max-width: 1050px)" srcset="imagens/img_m.jpg" type="image/jpg">
+        <img src="imagens/img_g.jpg" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Há 2 formas de reproduzir audio em seu site pelo HTML5:</p>
+    <p>Formato 1, tag &lt;audio&gt; direto:</p>
+    <audio src="midia/as_you_were-track_tribe.mp3" controls>Música As You Were (Track Tribe)</audio>
+    <p>Formato 2:</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/as_you_were-track_tribe.mp3" type="audio/mpeg">
+        <source src="midia/as_you_were-track_tribe.ogg" type="audio/ogg">
+        <source src="midia/as_you_were-track_tribe.wav" type="audio/wav">
+        <p>Infelizmente, seu navegador não consegue reproduzir áudio. <a href="midia/as_you_were-track_tribe.mp3"> Clique aqui para baixar o arquivo em MP3</a></p>
+    </audio>
+</body>
+</html>

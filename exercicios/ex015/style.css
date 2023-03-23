@@ -1,0 +1,15 @@
+@charset "UTF-8";
+body{
+    background-color: moccasin;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+h1{
+    color: darkmagenta;
+}
+h2{
+    color: magenta;
+}
+p{
+    text-align: justify;
+}

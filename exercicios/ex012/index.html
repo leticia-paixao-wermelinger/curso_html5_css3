@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML 5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Assim como ocorre com áudio, há 2 formas de incluir vídeo localmente. Uma, mas rápida e a outa, mais completa.</p>
+    <p>Essa é a forma mais rápida de incluir um vídeo que está hospedado no meu próprio servidor :</p>
+    <video src="midia/video-nataliya-vaitkevich.mp4" width="300" controls></video>
+    <p>Essa, por sua vfez, a forma mais completa de fazer a mesma coisa, prevendo os diferentes tipos de compatibilidades com os browsers:</p>
+    <video width="300" poster="midia/Sem título.png" controls autoplay loop>
+    <!-- Esse poster que eu coloquei ficou HORRÍVEL, tanto por ter ficado MUITO FEIO, como pq tem que fazer ele no mesmo formato que o vídeo está. Como o vídeo que eu selecionei está em pé, a imagem tinha que ser do mesmo tamanho! -->
+        <source src="midia/video-nataliya-vaitkevich.mp4" type="video/mp4">
+        <source src="midia/video-nataliya-vaitkevich.m4v" type="video/mp4">
+        <source src="midia/video-nataliya-vaitkevich.webm" type="video/webm">
+        <source src="midia/video-nataliya-vaitkevich.ogv" type="video/ogg">
+        <!-- Fiquei confusa quanto aos Media Types daqui. Os únicos que encontrei certinho naquela tabela de media types foram o mp4 e o ogg. Os outros, estão estranhos, não aparece o que o Prof. Guanabara indicou (que é o que eu coloquei aqui). Inclusive, deixei de colocar o Mv4 pq ele n falou dele e eu também não encontrei na tabela :/ -->
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0U02UsDg-IM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h1>Inserindo Vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/309112923?h=b412d8dfa1&loop=1" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/309112923">Usted Se&ntilde;alemelo - Ma&ntilde;ana</a> from <a href="https://vimeo.com/rudoco">Rudo Company</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<p>&quot;Ma&ntilde;ana&quot; is our third Music Video for the argentinian band Usted Se&ntilde;alemelo.<br />
+Produced by Rudo Company, most of the piece was animated straight ahead and painted frame by frame.<br />
+<br />
+Credits:<br />
+Directed by Rudo Co.<br />
+Produced by Rudo Co.<br />
+Story by Ezequiel Torres and Pablo R. Rold&aacute;n<br />
+Art direction by Ezequiel Torres and Euge Beizo<br />
+Animation Direction by Ezequiel Torres<br />
+<br />
+Design<br />
+Eugenia Beizo<br />
+Ezequiel Torres<br />
+<br />
+Character Design<br />
+Ezequiel Torres<br />
+Eugenia Beizo<br />
+<br />
+Coordinator<br />
+Mail&eacute;n Gayoso<br />
+<br />
+Animators<br />
+Ezequiel Torres<br />
+Pablo R. Rold&aacute;n<br />
+Leandro Vargas<br />
+Eugenia Beizo<br />
+Micaela Gabot<br />
+Gabriel H. Fermanelli<br />
+Gast&oacute;n Pacheco<br />
+Ezequiel Matteo<br />
+<br />
+Cel Animation Assist / Color<br />
+Ezequiel Torres<br />
+Pablo R. Rold&aacute;n<br />
+Eugenia Beizo<br />
+Micaela Gabot<br />
+In&eacute;s Fragueiro<br />
+Diego Barrionuevo<br />
+Ezequiel Matteo<br />
+David Andr&eacute;s L&oacute;pez<br />
+Mat&iacute;as Petroli<br />
+Margarita Cubino<br />
+Mart&iacute;n Prenassi<br />
+Gabriel H. Fermanelli<br />
+Camila Strusa<br />
+<br />
+Composition<br />
+Ezequiel Torres<br />
+Pablo R. Rold&aacute;n<br />
+Micaela Gabot</p>
+</body>
+</html>

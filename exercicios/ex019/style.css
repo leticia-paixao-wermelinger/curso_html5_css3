@@ -1,0 +1,33 @@
+@charset "UTF-8";
+body{
+    background-color: rgb(207, 240, 229);
+}
+h1#principal{ 
+    /* ´Também podemos colocar apenas a # e o identificador dado, sem indicar o 'h1' antes, aqui no CSS.
+    Tudo o que em HTML é "id", em CSS é #. 
+    Tudo que em HTML é "class", em CSS é .
+    */
+    text-align: center;
+    font-size: 3em;;
+}
+h1{
+    color: rgb(212, 89, 1);
+}
+h2{
+    color: chocolate;
+}
+.basico{
+    color: blue;
+}
+.intermediario{
+    color: rgb(138, 1, 138);
+}
+.avancado{
+    color: blueviolet;
+}
+.destaque{
+    background-color:rgb(150, 243, 150) ;
+}
+p{
+    text-align: justify;
+}

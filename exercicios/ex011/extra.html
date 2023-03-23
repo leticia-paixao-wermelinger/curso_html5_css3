@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mídias em HTML5 Extra</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou, simplesmente, aumente e diminua o tamanho do seu navegador.</p>
+    <p>Do menor para o maior</p>
+    <picture>
+        <source media="(min-width: 1050px)" srcset="imagens/leticia_1000.jpg" type="image/jpg">
+        <source media="(min-width: 950px)" srcset="imagens/leticia_900.jpg" type="image/jpg">
+        <source media="(min-width: 600px)" srcset="imagens/leticia_574.jpg" type="image/jpg">
+        <img src="imagens/leticia_376.jpg" alt="Formatura">
+    </picture>
+    <p>Do maior para o menor...</p>
+    <picture>
+        <source media="(max-width: 600px)" srcset="imagens/leticia_376.jpg" type="image/jpg">
+        <source media="(max-width: 950px)" srcset="imagens/leticia_574.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagens/leticia_900.jpg" type="image/jpg">
+        <img src="imagens/leticia_1000.jpg" alt="Formatura">
+    </picture>
+</body>
+</html>
