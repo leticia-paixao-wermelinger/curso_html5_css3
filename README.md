@@ -1,5 +1,6 @@
 # curso_html5_css3
-Os presentes documentos foram criados a partir do curso de HTML5 e CSS3 do canal <a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target="_blank" rel="external">Curso em Vídeo</a>, no YouTube: <br>
+Os presentes documentos foram criados a partir do curso de HTML5 e CSS3 do canal <a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target="_blank" rel="external">Curso em Vídeo</a>, no YouTube:
+
 1- <a href="desafios/d001/index.html">Desafio de mensagens -> Começando a escrever em HTML</a>;
 
 2- <a href="desafios/d002/index.html">Desafio de imagens -> Aprendendo a colocar imagens em sites</a>;
