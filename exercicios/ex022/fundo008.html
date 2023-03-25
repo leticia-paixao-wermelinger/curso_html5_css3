@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alinhamento Vertical</title>
+    <title>Alinhamento Vertical 2</title>
     <style>
         #container{
             position: relative;
-            height: 500px;
+            height: 1000px;
+            max-width: 2000px;
             padding: 10px;
             background-color: purple;
             background-image: url(imagens/target001.png);
@@ -16,24 +17,26 @@
         }
         #conteúdo{
             position: absolute;
-            height: 200px;
-            width: 400px;
-            /* Como colocar uma imagem ajustável em tamanho?*/
+            height: 75%;
+            width: 80%;
             background-color: yellow;
+            background-image: url(imagens/wallpaper003.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
             top: 50%;
             left: 50%;
-            background-image: url(imagens/target001.png);
-            background-size: 100% 100%;
-            /* transform: translate(-200px,-100px); */
             transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
+    <h1>Alinhamento vertical: - Teste com imagem ajustável</h1>
     <section id="container">
-        <article id="conteúdo">
-
-        </article>
+        <div id="conteúdo">
+            <p>teste</p>
+        </div>
     </section>
 </body>
 </html>
