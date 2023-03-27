@@ -20,3 +20,5 @@ Os presentes documentos foram criados a partir do curso de HTML5 e CSS3 do canal
 9- <a href="desafios/d009/index.html">Desafio vídeos - Incluindo vídeos do YouTube</a>;
 
 10- <a href="desafios/d010/index.html" class="especial"><strong>Criando um site: A História do Mascote do Android</strong></a>.
+
+11- <a href="desafios/d011/index.html">Desafio do astronauta: centralizando imagem de fundo</a>
