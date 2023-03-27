@@ -26,8 +26,8 @@ header{
 h1{
     font-family: var(--fonte-titulo);
     font-weight: bold;
-    font-size: 9em;
-    font-variant: small-caps;;
+    font-size: 10vw;
+    font-variant: small-caps; 
 }
 header>p{
     font-family: var(--fonte-normal);
@@ -50,27 +50,31 @@ section{
 #joaninha{
     background-color: black;
     background-image: url(imagens/background001.jpg);
-    background-position: center center;
+    background-position: right;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: scroll;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.548);
 }
 #folhas{
     background-color: black;
     background-image: url(imagens/background002.jpg);
-    background-position: center center;
+    background-position: right;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: scroll;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.548);
 }
 .especial{
     background-color: rgba(0, 0, 0, 0.432);
     color: white;
+    display: inline-block;
+    padding: 20px;
+    text-shadow: 1px 1px 2px black;
 }
 p{
     font-family: var(--fonte-poema);
-    font-size: 3em;
-    width: 40%;
+    font-size: 5vw;
     line-height: 2em;
     padding: 40px;
 }
