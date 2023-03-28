@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>População em Metrópole</title>
     <style>
+        p a{
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+            transition-duration: 0.5s;
+        }
         table{
             border-collapse: collapse;
             margin: 10px;
@@ -22,8 +31,30 @@
         .m{
             background-color: #EEFFAA;
         }
-        thead{
+        .metropole{
+            text-align: center;
+        }
+        .metropole > a{
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
+        .metropole > a:hover{
+            text-decoration: underline;
+        }
+        .num{
+            text-align: end;
+        }
+        thead, tfoot{
             background-color: #EAECF0;
+        }
+        tfoot{
+            font-weight: bold;
+            text-align: end;
+        }
+        .vazio{
+            border: 0;
+            background-color: white;
         }
         #índice>tbody th{
             text-align: left;
@@ -33,7 +64,7 @@
 </head>
 <body>
     <h1>Tabela de população em cada metrópole brasileira</h1>
-    <p>Dados retirados da página <a href="https://pt.wikipedia.org/wiki/Demografia_do_Brasil" target="_blank" rel="external">Demografia do Brasil</a>, no <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" target="_blank" rel="external">Wikipedia</a> em 27/03/2023 (informação da população em 2018)</p>
+    <p>Dados retirados da página <a href="https://pt.wikipedia.org/wiki/Demografia_do_Brasil" target="_blank" rel="external">Demografia do Brasil</a>, no <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" target="_blank" rel="external">Wikipedia</a> em 28/03/2023 (informação da população em 2018)</p>
     <table>
         <thead>
             <tr>
@@ -44,31 +75,89 @@
         </thead>
         <tbody>
             <tr class="gm">
-                <td>São Paulo</td>
+                <td class="metropole"><a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo" target="_blank" rel="external">São Paulo</a></td>
                 <td>São Paulo / Minas Gerais / Mato Grosso do Sul / Paraná</td>
-                <td>49 295 747</td>
+                <td class="num">49 295 747</td>
             </tr>
             <tr class="m">
-                <td>Recife</td>
+                <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Recife" target="_blank" rel="external">Recife</a></td>
                 <td>Pernambuco / Paraíba / Rio Grande do Norte / Alagoas / Sergipe / Bahia / Ceará / Piauí</td>
-                <td>23 601 254</td>
+                <td class="num">23 601 254</td>
             </tr>
             <tr class="m">
-                <td>Belo Horizonte</td>
+                <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Belo_Horizonte" target="_blank" rel="external">Belo Horizonte</a></td>
                 <td>Minas Gerais / São Paulo / Rio de Janeiro / Espírito Santo / Goiás</td>
-                <td>21 069 799</td>
+                <td class="num">21 069 799</td>
             </tr>
             <tr class="m">
-                <td>Fortaleza</td>
+                <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Fortaleza" target="_blank" rel="external">Fortaleza</a></td>
                 <td>Ceará / Piauí / Maranhão / Tocantins / Pará / Pernambuco</td>
-                <td>20 109 664</td>
+                <td class="num">20 109 664</td>
             </tr>
             <tr class="mn">
-                <td>Rio de Janeiro</td>
+                <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro" target="_blank" rel="external">Rio de Janeiro</a></td>
                 <td>Rio de Janeiro / Minas Gerais</td>
-                <td>17 296 239</td>
+                <td class="num">17 296 239</td>
             </tr>
+            <tr class="m">
+                <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Salvador" target="_blank" rel="external">Salvador</a></td>
+                <td>Bahia / Minas Gerais</td>
+                <td class="num">14 471 227</td>
+            </tr> 
+            <tr class="m">
+                <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Curitiba" target="_blank" rel="external">Curitiba</a></td>
+                <td>Paraná / Mato Grosso do Sul / Santa Catarina</td>
+                <td class="num">11 654 092</td>
+            </tr>
+            <tr class="mn">
+                <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Brasília" target="_blank" rel="external">Brasília</a></td>
+                <td>Distrito Federal / Goiás / Minas Gerais / Mato Grosso / Rondônia / Acre / Bahia / Tocantins / Maranhão / Piauí</td>
+                <td class="num">11 649 359</td>
+            </tr>
+        </tr> 
+        <tr class="m">
+            <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Porto_Alegre" target="_blank" rel="external">Porto Alegre</a></td>
+            <td>Rio Grande do Sul</td>
+            <td class="num">11 293 956</td>
+        </tr>
+        <tr class="m">
+            <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Belém_(Pará)" target="_blank" rel="external">Belém</a></td>
+            <td>Pará / Amapá / Maranhão / Tocantins</td>
+            <td class="num">9 335 660</td>
+        </tr>
+        <tr class="m">
+            <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Goiânia" target="_blank" rel="external">Goiânia</a></td>
+            <td> Goiás /  Minas Gerais /  Tocantins / Pará /  Mato Grosso</td>
+            <td class="num">8 269 552</td>
+        </tr>
+        <tr class="m">
+            <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Florianópolis" target="_blank" rel="external">Florianópolis</a></td>
+            <td> Santa Catarna, Rio Grande do Sul</td>
+            <td class="num">7 138 738</td>
+        </tr>
+        <tr class="m">
+            <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Manaus" target="_blank" rel="external">Manaus</a></td>
+            <td> Amazonas / Roraima</td>
+            <td class="num">4 490 260</td>
+        </tr>
+        <tr class="m">
+            <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Vitória_(Espírito_Santo)" target="_blank" rel="external">Vitória</a></td>
+            <td> Espírito Santo / Bahia / Minas Gerais</td>
+            <td class="num">4 468 927</td>
+        </tr>
+        <tr class="m">
+            <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Campinas" target="_blank" rel="external">Campinas</a></td>
+            <td> São Paulo</td>
+            <td class="num">4 396 180</td>
+        </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <td class="vazio"></td>
+                <th>Total de Habitantes:</td>
+                <td>218540654</td>
+            </tr>
+        </tfoot>
     </table>
     
     <table id="índice">
