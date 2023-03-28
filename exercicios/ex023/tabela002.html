@@ -5,10 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>População em Metrópole</title>
     <style>
-        p a{
+        @import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+        body{
+            background-image: linear-gradient(to bottom, #c0ce75a6, white);
+            background-attachment: fixed;
+            margin: 30px;
+        }
+        header{
             color: black;
-            font-weight: bold;
-            text-decoration: none;
+            margin: auto;
+            text-align: center;
+            padding: 5px;
+        }
+        h1{
+            font-size: 3em;
+            text-shadow: 1px 2px rgba(0, 0, 0, 0.534);
+            font-family: 'Nova Mono', monospace;
+            font-variant: small-caps;
         }
         a:hover{
             text-decoration: underline;
@@ -16,11 +29,14 @@
         }
         table{
             border-collapse: collapse;
-            margin: 10px;
+            margin: 30px;
+            padding: 10px;
+            align-self: auto;
+            box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.329);
         }
         th, td{
             border: 1px solid black;
-            padding: 5px;
+            padding: 10px;
         }
         .gm{
             background-color: #AAAAFF;
@@ -42,6 +58,95 @@
         .metropole > a:hover{
             text-decoration: underline;
         }
+        tr p{
+            display: inline;
+        }
+        .MG::before{
+            content: url(bandeiras/mg.webp);
+        }
+        .SP::before{
+            content: url(bandeiras/sp.webp);
+        }
+        .RJ::before{
+            content: url(bandeiras/rj.webp);
+        }
+        .ES::before{
+            content: url(bandeiras/es.webp);
+        }
+        .GO::before{
+            content: url(bandeiras/go.webp);
+        }
+        .MS::before{
+            content: url(bandeiras/ms.webp);
+        }
+        .PR::before{
+            content: url(bandeiras/pr.webp);
+        }
+        .PE::before{
+            content: url(bandeiras/pe.webp);
+        }
+        .PB::before{
+            content: url(bandeiras/pb.webp);
+        }
+        .PA::before{
+            content: url(bandeiras/pa.webp);
+        }
+        .RN::before{
+            content: url(bandeiras/rn.webp);
+        }
+        .AL::before{
+            content: url(bandeiras/al.webp);
+        }
+        .SE::before{
+            content: url(bandeiras/se.webp);
+        }
+        .BA::before{
+            content: url(bandeiras/ba.webp);
+        }
+        .CE::before{
+            content: url(bandeiras/ce.webp);
+        }
+        .PI::before{
+            content: url(bandeiras/pi.webp);
+        }
+        .SC::before{
+            content: url(bandeiras/sc.webp);
+        }
+        .TO::before{
+            content: url(bandeiras/to.webp);
+        }
+        .MA::before{
+            content: url(bandeiras/ma.webp);
+        }
+        .DF::before{
+            content: url(bandeiras/df.webp);
+        }
+        .MT::before{
+            content: url(bandeiras/mt.webp);
+        }
+        .RO::before{
+            content: url(bandeiras/ro.webp);
+        }
+        .AC::before{
+            content: url(bandeiras/ac.webp);
+        }
+        .RS::before{
+            content: url(bandeiras/rs.webp);
+        }
+        .AP::before{
+            content: url(bandeiras/ap.webp);
+        }
+        .AM::before{
+            content: url(bandeiras/am.webp);
+        }
+        .RR::before{
+            content: url(bandeiras/rr.webp);
+        }
+        table a{
+            font-weight: normal;
+            color: black;
+            text-decoration: none;
+        }
         .num{
             text-align: end;
         }
@@ -53,18 +158,30 @@
             text-align: end;
         }
         .vazio{
-            border: 0;
-            background-color: white;
+            border-right: 0;
+        }
+        .total{
+            border-left: 0;
         }
         #índice>tbody th{
             text-align: left;
             font-weight: normal;
         }
+        a{
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        footer{
+            text-align: end;
+            margin: 20px;
+        }
     </style>
 </head>
 <body>
-    <h1>Tabela de população em cada metrópole brasileira</h1>
-    <p>Dados retirados da página <a href="https://pt.wikipedia.org/wiki/Demografia_do_Brasil" target="_blank" rel="external">Demografia do Brasil</a>, no <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" target="_blank" rel="external">Wikipedia</a> em 28/03/2023 (informação da população em 2018)</p>
+    <header>
+        <h1>Tabela de População em Cada Metrópole Brasileira</h1>
+    </header>
     <table>
         <thead>
             <tr>
@@ -76,85 +193,153 @@
         <tbody>
             <tr class="gm">
                 <td class="metropole"><a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo" target="_blank" rel="external">São Paulo</a></td>
-                <td>São Paulo / Minas Gerais / Mato Grosso do Sul / Paraná</td>
+                <td>
+                    <p class="SP"> <a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo_(estado)" target="_blank" rel="external">São Paulo</a> /</p>
+                    <p class="MG"> <a href="https://pt.wikipedia.org/wiki/Minas_Gerais" target="_blank" rel="external">Minas Gerais</a> / </p>
+                    <p class="MS"> <a href="https://pt.wikipedia.org/wiki/Mato_Grosso_do_Sul" target="_blank" rel="external">Mato Grosso do Sul</a> /</p> 
+                    <p class="PR"> <a href="https://pt.wikipedia.org/wiki/Paran%C3%A1" target="_blank" rel>Paraná</a></p>
+                </td>
                 <td class="num">49 295 747</td>
             </tr>
             <tr class="m">
                 <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Recife" target="_blank" rel="external">Recife</a></td>
-                <td>Pernambuco / Paraíba / Rio Grande do Norte / Alagoas / Sergipe / Bahia / Ceará / Piauí</td>
+                <td>
+                    <p class="PE"> Pernambuco /</p>
+                    <p class="PB"> Paraíba /</p>
+                    <p class="RN"> Rio Grande do Norte /</p>
+                    <p class="AL"> Alagoas /</p>
+                    <p class="SE">  Sergipe /</p>
+                    <p class="BA"> Bahia /</p>
+                    <p class="CE"> Ceará /</p>
+                    <p class="PI"> Piauí</p>
+                </td>
                 <td class="num">23 601 254</td>
             </tr>
             <tr class="m">
                 <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Belo_Horizonte" target="_blank" rel="external">Belo Horizonte</a></td>
-                <td>Minas Gerais / São Paulo / Rio de Janeiro / Espírito Santo / Goiás</td>
+                <td>
+                    <p class="MG"> Minas Gerais /</p> <p class="SP"> São Paulo /</p> <p class="RJ"> Rio de Janeiro /</p> <p class="ES"> Espírito Santo /</p> <p class="GO"> Goiás</p></td>
                 <td class="num">21 069 799</td>
             </tr>
             <tr class="m">
                 <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Fortaleza" target="_blank" rel="external">Fortaleza</a></td>
-                <td>Ceará / Piauí / Maranhão / Tocantins / Pará / Pernambuco</td>
+                <td>
+                     <p class="CE"> Ceará /</p>
+                     <p class="PI"> Piauí /</p>
+                     <p class="MA"> Maranhão /</p>
+                     <p class="TO"> Tocantins /</p>
+                     <p class="PA"> Pará /</p>
+                     <p class="PE"> Pernambuco</p>
+                </td>
                 <td class="num">20 109 664</td>
             </tr>
             <tr class="mn">
                 <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro" target="_blank" rel="external">Rio de Janeiro</a></td>
-                <td>Rio de Janeiro / Minas Gerais</td>
+                <td>
+                    <p class="RJ"> Rio de Janeiro /</p>
+                    <p class="MG"> Minas Gerais</p>
+                </td>
                 <td class="num">17 296 239</td>
             </tr>
             <tr class="m">
                 <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Salvador" target="_blank" rel="external">Salvador</a></td>
-                <td>Bahia / Minas Gerais</td>
+                <td>
+                    <p class="BA"> Bahia /</p>
+                    <p class="MG"> Minas Gerais</p>
+                </td>
                 <td class="num">14 471 227</td>
             </tr> 
             <tr class="m">
                 <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Curitiba" target="_blank" rel="external">Curitiba</a></td>
-                <td>Paraná / Mato Grosso do Sul / Santa Catarina</td>
+                <td>
+                    <p class="PR"> Paraná /</p>
+                    <p class="MS"> Mato Grosso do Sul /</p>
+                    <p class="SC"> Santa Catarina</p>
+                </td>
                 <td class="num">11 654 092</td>
             </tr>
             <tr class="mn">
                 <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Brasília" target="_blank" rel="external">Brasília</a></td>
-                <td>Distrito Federal / Goiás / Minas Gerais / Mato Grosso / Rondônia / Acre / Bahia / Tocantins / Maranhão / Piauí</td>
+                <td>
+                    <p class="DF"> Distrito Federal /</p>
+                    <p class="GO"> Goiás /</p>
+                    <p class="MG"> Minas Gerais /</p>
+                    <p class="MT"> Mato Grosso /</p>
+                    <p class="RO"> Rondônia /</p>
+                    <p class="AC"> Acre /</p>
+                    <p class="BA"> Bahia /</p>
+                    <p class="TO"> Tocantins /</p>
+                    <p class="MA"> Maranhão /</p>
+                    <p class="PI"> Piauí</p>
+                </td>
                 <td class="num">11 649 359</td>
             </tr>
         </tr> 
         <tr class="m">
             <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Porto_Alegre" target="_blank" rel="external">Porto Alegre</a></td>
-            <td>Rio Grande do Sul</td>
+            <td>
+                <p class="RS"> Rio Grande do Sul</p>
+            </td>
             <td class="num">11 293 956</td>
         </tr>
         <tr class="m">
             <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Belém_(Pará)" target="_blank" rel="external">Belém</a></td>
-            <td>Pará / Amapá / Maranhão / Tocantins</td>
+            <td>
+                <p class="PA"> Pará /</p>
+                <p class="AP"> Amapá /</p>
+                <p class="MA"> Maranhão /</p>
+                <p class="TO"> Tocantins</p>
+            </td>
             <td class="num">9 335 660</td>
         </tr>
         <tr class="m">
             <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Goiânia" target="_blank" rel="external">Goiânia</a></td>
-            <td> Goiás /  Minas Gerais /  Tocantins / Pará /  Mato Grosso</td>
+            <td>
+                <p class="GO"> Goiás /</p>
+                <p class="MG"> Minas Gerais /</p>
+                <p class="TO"> Tocantins /</p>
+                <p class="PA"> Pará /</p>
+                <p class="MT"> Mato Grosso</p>
+            </td>
             <td class="num">8 269 552</td>
         </tr>
         <tr class="m">
             <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Florianópolis" target="_blank" rel="external">Florianópolis</a></td>
-            <td> Santa Catarna, Rio Grande do Sul</td>
+            <td>
+                <p class="SC"> Santa Catarna /</p>
+                <p class="RS"> Rio Grande do Sul</p>
+            </td>
             <td class="num">7 138 738</td>
         </tr>
         <tr class="m">
             <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Manaus" target="_blank" rel="external">Manaus</a></td>
-            <td> Amazonas / Roraima</td>
+            <td>
+                <p class="AM"> Amazonas /</p>
+                <p class="RR"> Roraima</p>
+            </td>
             <td class="num">4 490 260</td>
         </tr>
         <tr class="m">
             <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Vitória_(Espírito_Santo)" target="_blank" rel="external">Vitória</a></td>
-            <td> Espírito Santo / Bahia / Minas Gerais</td>
+            <td>
+                <p class="ES"> Espírito Santo /</p>
+                <p class="BA"> Bahia /</p>
+                <p class="MG"> Minas Gerais</p>
+            </td>
             <td class="num">4 468 927</td>
         </tr>
         <tr class="m">
             <td class="metropole"><a href="https://pt.wikipedia.org/wiki/Campinas" target="_blank" rel="external">Campinas</a></td>
-            <td> São Paulo</td>
+            <td>
+                <p class="SP"> São Paulo</p>
+            </td>
             <td class="num">4 396 180</td>
         </tr>
         </tbody>
         <tfoot>
             <tr>
                 <td class="vazio"></td>
-                <th>Total de Habitantes:</td>
+                <th class="total">Total de Habitantes:</td>
                 <td>218540654</td>
             </tr>
         </tfoot>
@@ -176,5 +361,6 @@
             </tr>
         </tbody>
     </table>
+    <footer>* Dados retirados da página <a href="https://pt.wikipedia.org/wiki/Demografia_do_Brasil" target="_blank" rel="external">Demografia do Brasil</a>, no <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" target="_blank" rel="external">Wikipedia</a> em 28/03/2023 (informação da população em 2018)</footer>
 </body>
 </html>
