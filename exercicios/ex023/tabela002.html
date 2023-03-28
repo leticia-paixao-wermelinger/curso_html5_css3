@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>População em Metrópole</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            margin: 10px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .gm{
+            background-color: #AAAAFF;
+        }
+        .mn{
+            background-color: #AFE9AF;
+        }
+        .m{
+            background-color: #EEFFAA;
+        }
+        thead{
+            background-color: #EAECF0;
+        }
+        #índice>tbody th{
+            text-align: left;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela de população em cada metrópole brasileira</h1>
+    <p>Dados retirados da página <a href="https://pt.wikipedia.org/wiki/Demografia_do_Brasil" target="_blank" rel="external">Demografia do Brasil</a>, no <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" target="_blank" rel="external">Wikipedia</a> em 27/03/2023 (informação da população em 2018)</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Rede Urbana</th>
+                <th>Unidades federativas abrangidas</th>
+                <th>População (2018)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="gm">
+                <td>São Paulo</td>
+                <td>São Paulo / Minas Gerais / Mato Grosso do Sul / Paraná</td>
+                <td>49 295 747</td>
+            </tr>
+            <tr class="m">
+                <td>Recife</td>
+                <td>Pernambuco / Paraíba / Rio Grande do Norte / Alagoas / Sergipe / Bahia / Ceará / Piauí</td>
+                <td>23 601 254</td>
+            </tr>
+            <tr class="m">
+                <td>Belo Horizonte</td>
+                <td>Minas Gerais / São Paulo / Rio de Janeiro / Espírito Santo / Goiás</td>
+                <td>21 069 799</td>
+            </tr>
+            <tr class="m">
+                <td>Fortaleza</td>
+                <td>Ceará / Piauí / Maranhão / Tocantins / Pará / Pernambuco</td>
+                <td>20 109 664</td>
+            </tr>
+            <tr class="mn">
+                <td>Rio de Janeiro</td>
+                <td>Rio de Janeiro / Minas Gerais</td>
+                <td>17 296 239</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table id="índice">
+        <thead>
+            <th>Índice:</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="gm">Grande Metrópole Nacional</th>
+            </tr>
+            <tr>
+                <th class="mn">Metrópoles Nacionais</th>
+            </tr>
+            <tr>
+                <th class="m">Metrópoles</th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
