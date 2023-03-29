@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid black;
+            padding: 50px;
+            text-align: center;
+        }
+        .par{
+            background-color: lightgreen;
+        }
+        .impar{
+            background-color: lightblue;
+        }
+        .col{
+            background-color: rgb(201, 144, 144);
+        }
+        .row{
+            background-color: rgb(235, 235, 119);
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+    <table>
+        <tr>
+            <td class="par">A</td>
+            <td class="impar">B</td>
+            <td class="par">C</td>
+        </tr>
+        <tr>
+            <td class="impar">D</td>
+            <td class="col" colspan="2">E</td>
+        </tr>
+        <tr>
+            <td class="par">F</td>
+            <td class="row" rowspan="3">G</td>
+            <td class="impar"> H</td>
+        </tr>
+        <tr>
+            <td class="impar">I</td>
+            <td class="par">J</td>
+        </tr>
+        <tr>
+            <td class="par">K</td>
+            <td class="impar">L</td>
+        </tr>
+    </table>
+</body>
+</html>

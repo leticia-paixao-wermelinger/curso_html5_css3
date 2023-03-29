@@ -33,19 +33,26 @@
             padding: 10px;
             align-self: auto;
             box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.329);
+            position: relative;
+        }
+        thead>tr>th{
+            position: sticky;
+            top: -1px;
+            background-color: #EAECF0;
+        }
+        caption{
+            font-weight: normal;
+            font-size: 2em;
+            border: 1px solid black;
+            box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.329);
+            text-shadow: 1px 1px black;
+            background-color: #93939669;
+            color: #2b2b2c;
+            padding: 5px;
         }
         th, td{
             border: 1px solid black;
             padding: 10px;
-        }
-        .gm{
-            background-color: #AAAAFF;
-        }
-        .mn{
-            background-color: #AFE9AF;
-        }
-        .m{
-            background-color: #EEFFAA;
         }
         .metropole{
             text-align: center;
@@ -60,6 +67,12 @@
         }
         tr p{
             display: inline;
+        }
+        tbody>tr:nth-child(odd){
+            background-color: rgba(165, 228, 165, 0.575);
+        }
+        tbody>tr:nth-child(even){
+            background-color: rgba(102, 102, 190, 0.514);
         }
         .MG::before{
             content: url(bandeiras/mg.webp);
@@ -163,10 +176,6 @@
         .total{
             border-left: 0;
         }
-        #índice>tbody th{
-            text-align: left;
-            font-weight: normal;
-        }
         a{
             color: black;
             font-weight: bold;
@@ -176,6 +185,10 @@
             text-align: end;
             margin: 20px;
         }
+        h2{
+            font-family:  'Nova Mono', monospace;
+            font-variant: small-caps;
+        }
     </style>
 </head>
 <body>
@@ -183,6 +196,7 @@
         <h1>Tabela de População em Cada Metrópole Brasileira</h1>
     </header>
     <table>
+        <caption> Tabela 002 Com Efeito Zebrado </caption>
         <thead>
             <tr>
                 <th scope="col">Rede Urbana</th>
@@ -344,23 +358,10 @@
             </tr>
         </tfoot>
     </table>
-    
-    <table id="índice">
-        <thead>
-            <th>Índice:</th>
-        </thead>
-        <tbody>
-            <tr>
-                <th class="gm">Grande Metrópole Nacional</th>
-            </tr>
-            <tr>
-                <th class="mn">Metrópoles Nacionais</th>
-            </tr>
-            <tr>
-                <th class="m">Metrópoles</th>
-            </tr>
-        </tbody>
-    </table>
+    <section>
+        <h2>Texto para testar o grude do cabeçalho preso apenas na tabela</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolorum possimus odit quo assumenda expedita fuga, quibusdam ad voluptatem, quos quidem perspiciatis optio dignissimos quod tempore quas velit. Inventore, omnis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab consequuntur aliquid placeat, facere vitae quam officiis, commodi voluptatum amet dolores minima maxime voluptates doloremque mollitia adipisci ut. Perspiciatis, reprehenderit rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quia, consectetur reiciendis omnis autem voluptatem quam. Fuga, quia dolore ex dicta quo, similique error veritatis dignissimos eius enim, ullam nam?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae eos modi iure repellendus quod numquam animi et maxime? Voluptate sed reiciendis eius natus vitae tempore voluptatem accusamus fugit ipsam incidunt.</p>        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolorum possimus odit quo assumenda expedita fuga, quibusdam ad voluptatem, quos quidem perspiciatis optio dignissimos quod tempore quas velit. Inventore, omnis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab consequuntur aliquid placeat, facere vitae quam officiis, commodi voluptatum amet dolores minima maxime voluptates doloremque mollitia adipisci ut. Perspiciatis, reprehenderit rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quia, consectetur reiciendis omnis autem voluptatem quam. Fuga, quia dolore ex dicta quo, similique error veritatis dignissimos eius enim, ullam nam?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae eos modi iure repellendus quod numquam animi et maxime? Voluptate sed reiciendis eius natus vitae tempore voluptatem accusamus fugit ipsam incidunt.</p>        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolorum possimus odit quo assumenda expedita fuga, quibusdam ad voluptatem, quos quidem perspiciatis optio dignissimos quod tempore quas velit. Inventore, omnis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab consequuntur aliquid placeat, facere vitae quam officiis, commodi voluptatum amet dolores minima maxime voluptates doloremque mollitia adipisci ut. Perspiciatis, reprehenderit rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quia, consectetur reiciendis omnis autem voluptatem quam. Fuga, quia dolore ex dicta quo, similique error veritatis dignissimos eius enim, ullam nam?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae eos modi iure repellendus quod numquam animi et maxime? Voluptate sed reiciendis eius natus vitae tempore voluptatem accusamus fugit ipsam incidunt.</p>        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolorum possimus odit quo assumenda expedita fuga, quibusdam ad voluptatem, quos quidem perspiciatis optio dignissimos quod tempore quas velit. Inventore, omnis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab consequuntur aliquid placeat, facere vitae quam officiis, commodi voluptatum amet dolores minima maxime voluptates doloremque mollitia adipisci ut. Perspiciatis, reprehenderit rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quia, consectetur reiciendis omnis autem voluptatem quam. Fuga, quia dolore ex dicta quo, similique error veritatis dignissimos eius enim, ullam nam?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae eos modi iure repellendus quod numquam animi et maxime? Voluptate sed reiciendis eius natus vitae tempore voluptatem accusamus fugit ipsam incidunt.</p>        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolorum possimus odit quo assumenda expedita fuga, quibusdam ad voluptatem, quos quidem perspiciatis optio dignissimos quod tempore quas velit. Inventore, omnis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab consequuntur aliquid placeat, facere vitae quam officiis, commodi voluptatum amet dolores minima maxime voluptates doloremque mollitia adipisci ut. Perspiciatis, reprehenderit rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quia, consectetur reiciendis omnis autem voluptatem quam. Fuga, quia dolore ex dicta quo, similique error veritatis dignissimos eius enim, ullam nam?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae eos modi iure repellendus quod numquam animi et maxime? Voluptate sed reiciendis eius natus vitae tempore voluptatem accusamus fugit ipsam incidunt.</p>
+    </section>
     <footer>* Dados retirados da página <a href="https://pt.wikipedia.org/wiki/Demografia_do_Brasil" target="_blank" rel="external">Demografia do Brasil</a>, no <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" target="_blank" rel="external">Wikipedia</a> em 28/03/2023 (informação da população em 2018)</footer>
 </body>
 </html>
