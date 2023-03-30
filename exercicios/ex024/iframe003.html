@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação no iframe</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@600&display=swap');
+        body{
+            padding: 20px;
+            background-image: linear-gradient(to bottom, rgb(246, 248, 231), rgba(128, 128, 128, 0.829));
+            background-attachment: fixed;
+        }
+        h1{
+            font-family: 'Alkatra', cursive;
+            text-align: center;
+            text-shadow: 1px 1px rgba(0, 0, 0, 0.521);
+        }
+        p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: justify;
+            padding: 10px;
+            line-height: 1.4em;
+            font-size: 1.2em;
+        }
+        ul{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 1.3em;
+            line-height: 1.4em;
+        }
+        iframe{
+            width: 90vw;
+            height: 30vh;
+            border: 2px solid rgba(0, 0, 0, 0.445);
+            box-shadow: inset 1px 1px 5px 1px rgba(0, 0, 0, 0.336);
+        }
+    </style>
+</head>
+<body>
+    <h1>Selecione o link desejado para visualizar a página abaixo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti exercitationem quia repellat accusantium error ducimus voluptates iste dicta alias aliquid numquam totam odio tenetur sint voluptatem, ex et iure vero!</p>
+    <ul>
+        <li> <a href="../ex023/tabela002.html" target="frame">Tabela de População em Cada Metrópole Brasileira</a> </li>
+        <li> <a href="../../desafios/d012/index.html" target="frame">Cordel Moderno</a> </li>
+        <li> <a href="../../desafios/d010/hist-mascote-android.html" target="frame">História do Marcote do Android</a> </li>
+        <li><a href="../../desafios/d005/index.html" target="frame">Sobre Leícia Paixão</a></li>
+    </ul>
+    <iframe name="frame" src="../../desafios/d011/index.html">
+        <p>Infelizmente o seu navegador não é compatível com esse modo de exibição. Selecione o link desejado para abrir em uma nova página:</p>
+        <ul>
+            <li> <a href="../ex023/tabela002.html" target="_blank">Tabela de População em Cada Metrópole Brasileira</a> </li>
+            <li> <a href="../../desafios/d012/index.html" target="_blank">Cordel Moderno</a> </li>
+            <li> <a href="../../desafios/d010/hist-mascote-android.html" target="_blank">História do Marcote do Android</a> </li>
+            <li><a href="../../desafios/d005/index.html" target="_blank">Sobre Leícia Paixão</a></li>
+        </ul>
+    </iframe>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui saepe assumenda magni dolore dignissimos similique, debitis voluptates pariatur quas excepturi aspernatur quibusdam rerum asperiores, officiis tenetur obcaecati voluptatibus dolorum consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ea tenetur vitae cumque deleniti fugit rem quaerat, atque in doloribus illum neque velit totam aspernatur commodi nihil unde officiis Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nam modi quod voluptates placeat adipisci dolores dolorum nisi dicta! Itaque esse quas labore magni minus, eligendi iure molestiae optio praesentium?</p>
+</body>
+</html>
