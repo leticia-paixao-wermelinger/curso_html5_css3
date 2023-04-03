@@ -23,10 +23,10 @@ Os presentes documentos foram criados a partir do curso de HTML5 e CSS3 do canal
 
 11- <a href="desafios/d011/index.html">Desafio do astronauta: centralizando imagem de fundo</a>
 
-12- <a href="desafios/d12/index.html" class="especial"><strong>Cordel Moderno, de Milton Duarte</strong></a>
+12- <a href="desafios/d012/index.html" class="especial"><strong>Cordel Moderno, de Milton Duarte</strong></a>
 
-13- <a href="desafios/d13/index.html">Aprendendo Tabelas em HTML</a>
+13- <a href="desafios/d013/index.html">Aprendendo Tabelas em HTML</a>
 
-14- <a href="desafios/d14/index.html">Mais tabelas em HTML</a>
+14- <a href="desafios/d014/index.html">Mais tabelas em HTML</a>
 
-15- <a href="desafios/d15/index.html" class="especial"><strong>Minhas redes sociais</strong></a>
+15- <a href="desafios/d015/index.html" class="especial"><strong>Minhas redes sociais</strong></a>
