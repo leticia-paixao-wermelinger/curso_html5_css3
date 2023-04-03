@@ -20,16 +20,27 @@ body{
 }
 #tela{
     position: relative;
-    top: 32vh;
-    left: 34vw;
-    transform: translate(-50%, -50%);
+    top: 76px;
+    left: 71px;
     width: 258px;
     height: 456px;
-    background-position: cover;
 }
 p{
     font-family: Arial, Helvetica, sans-serif;
 }
-img{
-    
+#redes-sociais{
+    text-align: right;
+}
+#redes-sociais img{
+    border-radius: 55%;
+    width: 70px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.753);
+    text-align: right;
+    margin-top: 20px;
+}
+#redes-sociais img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.308);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.753);
+    transition: transform 0.5s, border 0.2s;
 }
