@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* Estilos para impressoras */
+
+:root{
+    --cor1: #23606E;
+    --cor2: #FACFCE;
+    --cor3: #008F8C;
+    --cor4: #015958;
+    --cor5: #023535;
+}
+
+*{
+    margin: 5px;
+    padding: 5px;
+}
+header{
+    background-color: var(--cor5);
+    color: var(--cor2);
+    padding: 5px;
+    margin: 5px;
+}
+header h1{
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.336);
+}
+menu{
+    display: none;
+}
+main{
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+    padding: 20px;
+}
+h2{
+    padding: 15px;
+}
+h3{
+    padding: 10px;
+}
+p{
+    padding: 10px;
+    line-height: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
