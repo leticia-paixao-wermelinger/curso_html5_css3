@@ -2,16 +2,103 @@
 
 /* Versão para todas as demais mídias */
 
-@media print {}
+@media print { /* Impressão */
+body{
+    background-color: rgba(0, 0, 0, 0.164); /* Impressão não aceita background. Podemos colocar, mas não vai fazer diferença nenhuma */
+}
 
-@media screen and (orientation:landscape){
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    text-shadow: none;
+    padding-bottom: 10px;
+}
+
+#phone{display: none;}
+#tablet{display: none;}
+#print{display: block;}
+#desktop{display: none;}
+#tv{display: none;}
+
+main{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+body::after{
+    content: 'Essa página foi retirada do GitHub de leticia-paixao-wermelinger';
+}
+
+}
+
+
+
+
+
+@media screen and (min-width:768px) and (max-width:992px){ /* Tablet */
     body{
-        background-color: rgba(0, 0, 0, 0.164); /* Impressão não aceita background. Podemos colocar, mas não vai fazer diferença nenhuma */
+        background-image: url(../imagens/back-tablet.jpg);
     }
+
     h1{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: black;
-        text-shadow: none;
+        color: rgba(0, 0, 0, 0.397);
+    }
+
+    #phone{display: none;}
+    #tablet{display: block;}
+    #print{display: none;}
+    #desktop{display: none;}
+    #tv{display: none;}
+}
+
+
+
+
+
+@media screen and (min-width:992px) and (max-width:1200px){ /* Desktop */
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    h1{
+        color: rgb(107, 99, 87);
+    }
+
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: none;}
+    #desktop{display: block;}
+    #tv{display: none;}
+
+    main{
+        background-color: rgba(199, 205, 211, 0.829);
+    }
+
+}
+
+
+
+
+
+@media screen and (min-width:1200px){ /* TV */
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    h1{
+        color: rgb(107, 99, 87);
+    }
+
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: none;}
+    #desktop{display: none;}
+    #tv{display: block;}
+
+    main{
+        background-color: rgba(199, 205, 211, 0.829);
+        width: 50vw;
     }
     
 }
