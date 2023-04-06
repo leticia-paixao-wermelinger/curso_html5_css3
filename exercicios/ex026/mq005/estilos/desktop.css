@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #2C3532;
+    --cor2: #0F6466;
+    --cor3: #D8B08C;
+    --cor4: #FFCB9A;
+    --cor5: #D2E8E3;
+    --font-site: 'Macondo', cursive;
+    ---font-text: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+*{
+    margin: 0px;
+}
+
+header h1{
+    font-size: 4em;
+}
+
+#icon-menu{ /* Por alguma razão que ainda não entendi, só está funcionando a retirada do ícone se colocar um id. Só com a class que ele veio do Google Fonts não funciona */
+    display: none;
+}
+
+menu{
+    display: block;
+}
+
+menu li{
+    display: inline-block;
+    padding: 5px;
+    margin: 0px 10px;
+}
+
+menu li a{
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.555);
+    background-color: #ffcb9ac4;
+}
+
+menu a:hover{
+    transform: translate(-1px, -1px);
+    transition: transform 0.5s, border 0.2s;
+}
+
+main{
+    max-width: 800px;
+}
+
+main h1{
+    font-size: 2em;
+}
+
+main p{
+    font-size: 1.2em;
+}

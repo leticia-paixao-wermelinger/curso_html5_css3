@@ -23,6 +23,8 @@
 
 body{
     background-image: linear-gradient(to bottom, var(--cor4), var(--cor3));
+    height: 100vh;
+    background-attachment: fixed;
 }
 
 header{
@@ -38,6 +40,7 @@ header h1{
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.438);
 }
 .material-icons{
+    display: block;
     width: 100%;
     text-align: center;
     margin: 2px auto 0px auto;
@@ -47,7 +50,7 @@ header h1{
     background-color: var(--cor3);
     color: var(--cor2);
     cursor: pointer;
-    
+
 }
 menu{
     display: none;
@@ -95,6 +98,7 @@ main{
 }
 main h1{
     font-family: var(--font-site);
+    font-size: 1.5em;
     padding-bottom: 10px;
     text-shadow: 1px 1px 1px var(--cor2);
 }
@@ -103,4 +107,5 @@ main p{
     padding-top: 5px;
     line-height: 1.5em;
     text-indent: 10px;
+    font-size: 1em;
 }

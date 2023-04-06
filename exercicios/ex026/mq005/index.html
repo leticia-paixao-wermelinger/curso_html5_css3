@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link rel="stylesheet" href="estilos/tablet.css" media="screen and (min-width:768px) and (max-width:992px)">
+    <link rel="stylesheet" href="estilos/desktop.css" media="screen and (min-width:992px) and (max-width:1200px)">
+    <link rel="stylesheet" href="estilos/tv.css" media="screen and (min-width:1200px)">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body onresize="mudouTam ()">
     <header>
         <h1> Meu Site </h1>
-        <span class="material-icons" onclick="clickMenu()">menu</span>
+        <span id="icon-menu" class="material-icons" onclick="clickMenu()">menu</span>
         <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
@@ -33,6 +35,15 @@
         </article>
     </main>
     <script>
+
+        function mudouTam(){
+            if(window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
         function clickMenu(){
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
