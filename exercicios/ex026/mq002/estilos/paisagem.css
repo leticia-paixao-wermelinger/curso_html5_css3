@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/* Estilo para Telas em Paisagem */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header h1{
+    font-size: 3em;
+}
+
+body{
+    background-image: url(../../imagens/cev-landscape.jpg);
+    background-position: bottom left;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <style>
+        :root{
+    --cor1: #23606E;
+    --cor2: #FACFCE;
+    --cor3: #008F8C;
+    --cor4: #015958;
+    --cor5: #023535;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #233EFF;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+header{
+    background-color: #0a124d54;
+    color: var(--cor2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: fit-content;
+    margin: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.473);
+}
+header h1{
+    text-align: center;
+    text-shadow: 3px 3px 5px black;
+    padding: 10px;
+}
+
+menu ul{
+    text-align: left;
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px;
+}
+menu li{
+    background-color: var(--cor4);
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+main{
+    background-color: white;
+    width: 600px;
+    margin: auto;
+    text-align: justify;
+    padding: 20px;
+}
+h2{
+    padding: 15px;
+}
+h3{
+    padding: 10px;
+}
+p{
+    padding: 10px;
+    line-height: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (orientation:landscape){
+    *{
+    margin: 0px;
+    padding: 0px;
+}
+
+header h1{
+    font-size: 3em;
+}
+
+body{
+    background-image: url(../imagens/cev-landscape.jpg);
+    background-position: bottom left;
+}
+}
+
+@media screen and (orientation: portrait){
+    *{
+    margin: 0px;
+    padding: 0px;
+}
+
+header h1{
+    font-size: 2em;
+}
+body{
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: bottom center;
+}
+}
+
+@media print{
+    *{
+    margin: 5px;
+    padding: 5px;
+}
+header{
+    background-color: var(--cor5);
+    color: var(--cor2);
+    padding: 5px;
+    margin: 5px;
+}
+header h1{
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.336);
+}
+menu{
+    display: none;
+}
+main{
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+    padding: 20px;
+}
+h2{
+    padding: 15px;
+}
+h3{
+    padding: 10px;
+}
+p{
+    padding: 10px;
+    line-height: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mude a orientação do dispositivo</h1>
+    </header>
+</body>
+</html>

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/* Versão para todas as demais mídias */
+
+@media print {}
+
+@media screen and (orientation:landscape){
+    body{
+        background-color: rgba(0, 0, 0, 0.164); /* Impressão não aceita background. Podemos colocar, mas não vai fazer diferença nenhuma */
+    }
+    h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: black;
+        text-shadow: none;
+    }
+    
+}
