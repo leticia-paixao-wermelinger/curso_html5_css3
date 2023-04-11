@@ -8,8 +8,8 @@ main{
     background-color: white;
     width: 95vw;
     max-width: 250px;
-    height: 90vh;
-    min-height: 550px;
+    height: fit-content;
+    min-height: 600px;
     border-radius: 30px;
     text-align: center;
     overflow: hidden;

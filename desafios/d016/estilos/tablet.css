@@ -14,13 +14,13 @@ body{
 
 main{
     width: 700px;
-    height: 350px;
+    height: 400px;
 }
 
 #img {
     float: left;
     width:33%;
-    height: 350px;
+    height: 100%;
 }
 
 #texto{

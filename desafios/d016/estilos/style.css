@@ -58,53 +58,72 @@ h1{
 }
 
 div{
+    margin: 10px auto;
     border-radius: 5px;
-    margin: 5px;
-    padding: 1px;
-    border: none;
+    height: 40px;
 }
 
 .text{
     background-color: var(--cor-fundo);
 }
 
-.material-symbols-outlined{
-    color: white;
-}
-
-#mail{
-    color: black;
-}
-
-div a{
-    color: black;
-    text-decoration: none;
-}
-
-.login, .senha{
+div .login, .senha{
     height: 100%;
     border-radius: 5px;
     background-color: var(--preencher);
-}
-
-.botao1{
-    background-color: var(--fundo);
-}
-
-.botao2{
-    background-color: white;
-    border: 10px 10px solid #94CFCD;
-}
-
-.botao1, .botao2{
-    border-radius: 10px;
     margin: 5px;
-    padding: 1px;
+    width: calc(100% - 55px);
+    height: 80%;
+    transform: translateY(-11px);
+}
+
+div .login:focus-within, .senha:focus-within{
+    background-color: white;
+}
+
+div .material-symbols-outlined{
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    width: 40px;
+    font-size: 2em;
+}
+
+.botao{
+    display: block;
+    border-radius: 5px;
     width: 100%;
     height: 30px;
-    border: none;
+    border: 1px solid var(--preencher);
+    margin: 10px auto;
+    cursor: pointer;
+    height: 40px;
+}
+
+input[type=submit]{
+    background-color: var(--fundo);
+    color: white;
+}
+
+a{
+    color: var(--botao-hover);
+    text-decoration: none;
+    padding-top: 7px;
+}
+
+input[type=submit]:hover{
+    background-color: var(--botao-hover);   
+}
+
+#mail{
+    color: var(--botao-hover);
+    font-size: 0.8em;
+}
+
+a:hover{
+    background-color: var(--preencher);
 }
 
 div{
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.116);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0);
 }
