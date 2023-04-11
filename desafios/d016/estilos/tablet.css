@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+
+:root{
+    --cor-fundo: #5F2C82;
+    --botao: #2D6462;
+    --preencher: #94CFCD;
+    --fundo: #4C939A;
+}
+
+body{
+    background-image: linear-gradient(to top, var(--fundo), var(--cor-fundo));
+}
+
+main{
+    width: 700px;
+    height: 350px;
+}
+
+#img {
+    float: left;
+    width:33%;
+    height: 350px;
+}
+
+#texto{
+    float: right;
+    width: 67%;
+    padding: 30px;
+}
